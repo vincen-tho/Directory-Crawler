@@ -1,0 +1,15 @@
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\bin\Release\net6.0\FileSearch.exe
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\bin\Release\net6.0\FileSearch.deps.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\bin\Release\net6.0\FileSearch.runtimeconfig.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\bin\Release\net6.0\FileSearch.dll
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\bin\Release\net6.0\FileSearch.pdb
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.csproj.AssemblyReference.cache
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.GeneratedMSBuildEditorConfig.editorconfig
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.AssemblyInfoInputs.cache
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.AssemblyInfo.cs
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.csproj.CoreCompileInputs.cache
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.dll
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\refint\FileSearch.dll
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.pdb
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\FileSearch.genruntimeconfig.cache
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\FileSearch\obj\Release\net6.0\ref\FileSearch.dll

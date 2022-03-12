@@ -1,0 +1,5 @@
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\Executable\FileSearch.exe
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\Executable\FileSearch.dll
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\Executable\FileSearch.deps.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\Executable\FileSearch.runtimeconfig.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\CSHARP\FileSearch\Executable\FileSearch.pdb

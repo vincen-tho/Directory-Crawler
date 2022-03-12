@@ -1,0 +1,5 @@
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\FileSearch.exe
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\FileSearch.dll
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\FileSearch.deps.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\FileSearch.runtimeconfig.json
+D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\FileSearch.pdb
