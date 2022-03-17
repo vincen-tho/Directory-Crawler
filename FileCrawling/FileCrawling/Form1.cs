@@ -48,6 +48,7 @@ namespace FileCrawling
             VisualizeTreeNode(t.root, graph);
 
             gViewer1.Graph = graph;
+            gViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
 
             //associate the viewer with the form 
             //show the form 
