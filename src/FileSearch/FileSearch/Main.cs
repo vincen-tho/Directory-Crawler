@@ -1,4 +1,4 @@
-﻿
+
 using System;
 namespace FileSearch
 {
@@ -32,7 +32,14 @@ namespace FileSearch
 			Console.Write("\n  Directory : \n");
 			// Print tree element
 			tree.Print(tree.root);
-		
-	}
+
+			string root;
+			string goal;
+			root = Console.ReadLine();
+			goal = Console.ReadLine();
+			var DFS = new DFS(root,goal);
+			DFS.showTree();
+
+		}
     }
 }
