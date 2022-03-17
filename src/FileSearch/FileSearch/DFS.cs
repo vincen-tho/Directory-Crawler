@@ -22,7 +22,8 @@ namespace FileSearch
             this.solution = new List<string>();
             this.DFSTree = new Tree();
             this.DFSTree.root = DFSRecursive(root);
-            //this.addSolution();
+            this.addSolution();
+            this.DFSTree.root.SetName(root);
         }
 
         public void showTree()
