@@ -28,6 +28,11 @@ namespace FileSearch
         {
             this.category = category;
         }
+        
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
     }
 
     public class Tree
