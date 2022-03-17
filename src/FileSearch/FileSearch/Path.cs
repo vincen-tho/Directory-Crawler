@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,6 +41,12 @@ namespace FileSearch
         public static string addPath (string path, string child)
         {
             return Path.Combine(path, child);
+        }
+
+        public static string splitPath (string root, string path)
+        {
+            int pos = root.Length;
+            return path.Remove(0,pos);
         }
     }
 }
