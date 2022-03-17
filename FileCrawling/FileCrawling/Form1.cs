@@ -16,6 +16,8 @@ namespace FileCrawling
         {
             InitializeComponent();
         }
+        public string root;
+        public string goal;
         public void Print()
         {
             //create a form 
@@ -48,7 +50,7 @@ namespace FileCrawling
             VisualizeTreeNode(t.root, graph);
 
             gViewer1.Graph = graph;
-            gViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //gViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
 
             //associate the viewer with the form 
             //show the form 
@@ -77,14 +79,38 @@ namespace FileCrawling
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var tree = new Tree();
-
-            string root;
-            string goal;
-            root = "D:/KULIAH WOY/AKADEMIK/Semester 4/Strategi Algoritma/Tubes 2/TEST";
-            goal = "goal.txt";
             var d = new DFS(root, goal);
             Visualize(d.DFSTree);
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            goal = textBox1.Text;
+            var d = new DFS(root, goal);
+            Visualize(d.DFSTree);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var tree = new Tree();
+            FolderBrowserDialog openFolder1 = new FolderBrowserDialog();
+            openFolder1.ShowDialog();
+            root = openFolder1.SelectedPath;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
