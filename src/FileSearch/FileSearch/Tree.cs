@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,11 @@ namespace FileSearch
         {
             var c = new TreeNode(name, category);
             this.children.Add(c);
+        }
+
+        public void SetCategory(int category)
+        {
+            this.category = category;
         }
     }
 
