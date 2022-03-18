@@ -58,3 +58,5 @@ D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Director
 D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.csproj.CopyComplete
 D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.exe
 D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.pdb
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\FileCrawling\obj\Debug\FileCrawling.exe
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\FileCrawling\obj\Debug\FileCrawling.pdb
