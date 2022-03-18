@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\CSHARP\\FileSearch\\FileSearch\\FileSearch.csproj",
+      "projectUniqueName": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\New folder\\Directory-Crawler\\src\\FileSearch\\FileSearch\\FileSearch.csproj",
       "projectName": "FileSearch",
-      "projectPath": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\CSHARP\\FileSearch\\FileSearch\\FileSearch.csproj",
+      "projectPath": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\New folder\\Directory-Crawler\\src\\FileSearch\\FileSearch\\FileSearch.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\CSHARP\\FileSearch\\FileSearch\\obj\\",
+      "outputPath": "D:\\KULIAH WOY\\AKADEMIK\\Semester 4\\Strategi Algoritma\\Tubes 2\\New folder\\Directory-Crawler\\src\\FileSearch\\FileSearch\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
