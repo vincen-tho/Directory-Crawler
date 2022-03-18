@@ -91,6 +91,10 @@ namespace FileCrawling
                 var d = new DFS(root, goal);
                 Visualize(d.DFSTree);
             }
+            else if (radioButton2.Checked)
+            {
+                // BFS DISINI
+            }
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
