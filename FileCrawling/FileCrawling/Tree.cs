@@ -9,14 +9,18 @@ namespace FileCrawling
     public class TreeNode
     {
         public string name;
+        public int id;
         public int category; // 0 = in queue, 1 = accessed node, 2 = goal path
         public List<TreeNode> children;
+
+        public static int accessedCount = 0;
 
         public TreeNode(string name, int category)
         {
             this.name = name;
             this.category = category;
             this.children = new List<TreeNode>();
+            this.id = accessedCount++;
         }
         public void AddChild(string name, int category)
         {

@@ -59,19 +59,25 @@ namespace FileCrawling
         }
         public void VisualizeTreeNode(TreeNode t, Microsoft.Msagl.Drawing.Graph graph)
         {
+            string vertexPName;
+            string vertexCName;
+            vertexPName = t.id.ToString() + " " + t.name;
             foreach (TreeNode child in t.children)
             {
+  
+                vertexCName = child.id.ToString() + " " + child.name;
                 if (child.category == 0)
                 {
-                    graph.AddEdge(t.name, child.name);
+                    
+                    graph.AddEdge(vertexPName, vertexCName);
                 }
                 else if (child.category == 1)
                 {
-                    graph.AddEdge(t.name, child.name).Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
+                    graph.AddEdge(vertexPName, vertexCName).Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
                 }
                 else
                 {
-                    graph.AddEdge(t.name, child.name).Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
+                    graph.AddEdge(vertexPName, vertexCName).Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
                 }
                 VisualizeTreeNode(child, graph);
             }
