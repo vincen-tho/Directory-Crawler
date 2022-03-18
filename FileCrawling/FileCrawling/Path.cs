@@ -48,5 +48,39 @@ namespace FileCrawling
             int pos = root.Length;
             return path.Remove(0, pos);
         }
+        
+        public static void addSolution(List<string> solution, string root, TreeNode treeRoot)
+        {
+            List<string> directory = new List<string>();
+            string[] folder;
+            foreach (string sol in solution)
+            {
+                directory.Add(PathUtil.splitPath(root, sol));
+            }
+            //iterasiin
+            foreach (string dir in directory)
+            {
+                folder = dir.Split(Path.DirectorySeparatorChar);
+                folder = folder.Skip(1).ToArray();
+                goalPath(folder, treeRoot);
+            }
+        }
+
+        public static void goalPath(string[] folder, TreeNode node)
+        {
+            if (folder.Length != 0)
+            {
+                foreach (TreeNode child in node.children)
+                {
+                    if (child.name == folder[0])
+                    {
+                        child.SetCategory(2);
+                        folder = folder.Skip(1).ToArray();
+                        goalPath(folder, child);
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
