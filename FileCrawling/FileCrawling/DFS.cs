@@ -158,6 +158,7 @@ namespace FileCrawling
             foreach (string dir in directory)
             {
                 folder = dir.Split(Path.DirectorySeparatorChar);
+                folder = folder.Skip(1).ToArray();
                 goalPath(folder, DFSTree.root);
             }
         }
@@ -168,11 +169,12 @@ namespace FileCrawling
             {
                 foreach (TreeNode child in node.children)
                 {
-                    if (node.name == folder[0])
+                    if (child.name == folder[0])
                     {
-                        node.SetCategory(2);
+                        child.SetCategory(2);
                         folder = folder.Skip(1).ToArray();
-                        goalPath(folder, node);
+                        goalPath(folder, child);
+                        break;
                     }
                 }
             }
