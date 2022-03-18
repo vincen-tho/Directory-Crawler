@@ -14,12 +14,14 @@ namespace FileCrawling
         public List<string> solution;
         public Tree DFSTree;
         public bool found;
+        public bool allOcc;
 
-        public DFS(string root, string goal)
+        public DFS(string root, string goal, bool allOcc)
         {
             this.root = root;
             this.goal = goal;
             this.found = false;
+            this.allOcc = allOcc;
             this.solution = new List<string>();
             this.DFSTree = new Tree();
             this.DFSTree.root = DFSRecursive(root);
@@ -75,7 +77,10 @@ namespace FileCrawling
                         {
                             this.solution.Add(file);
                             DFS.root.AddChild(fileName, 2);
-                            this.found = true;
+                            if (!this.allOcc)
+                            {
+                                this.found = true;
+                            }
                         }
                         else
                         {
@@ -129,7 +134,10 @@ namespace FileCrawling
                         {
                             this.solution.Add(file);
                             DFS.root.AddChild(fileName, 2);
-                            this.found = true;
+                            if (!this.allOcc)
+                            {
+                                this.found = true;
+                            }
                         }
                         else
                         {
@@ -158,6 +166,7 @@ namespace FileCrawling
             foreach (string dir in directory)
             {
                 folder = dir.Split(Path.DirectorySeparatorChar);
+                folder = folder.Skip(1).ToArray();
                 goalPath(folder, DFSTree.root);
             }
         }
@@ -168,11 +177,12 @@ namespace FileCrawling
             {
                 foreach (TreeNode child in node.children)
                 {
-                    if (node.name == folder[0])
+                    if (child.name == folder[0])
                     {
-                        node.SetCategory(2);
+                        child.SetCategory(2);
                         folder = folder.Skip(1).ToArray();
-                        goalPath(folder, node);
+                        goalPath(folder, child);
+                        break;
                     }
                 }
             }
