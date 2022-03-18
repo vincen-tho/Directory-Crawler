@@ -13,7 +13,7 @@ namespace FileCrawling
         public int category; // 0 = in queue, 1 = accessed node, 2 = goal path
         public List<TreeNode> children;
 
-        public static int accessedCount = 0;
+        public static int accessedCount;
 
         public TreeNode(string name, int category)
         {
@@ -36,6 +36,10 @@ namespace FileCrawling
         public void SetName(string name)
         {
             this.name = name;
+        }
+        public static void Reset()
+        {
+            accessedCount = 0;
         }
     }
 

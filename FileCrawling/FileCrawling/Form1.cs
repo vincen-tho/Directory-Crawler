@@ -77,7 +77,7 @@ namespace FileCrawling
                 }
                 else
                 {
-                    graph.AddEdge(vertexPName, vertexCName).Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
+                    graph.AddEdge(vertexPName, vertexCName).Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
                 }
                 VisualizeTreeNode(child, graph);
             }
@@ -85,8 +85,12 @@ namespace FileCrawling
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var d = new DFS(root, goal);
-            Visualize(d.DFSTree);
+            if (radioButton1.Checked)
+            {
+                TreeNode.Reset();
+                var d = new DFS(root, goal);
+                Visualize(d.DFSTree);
+            }
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -98,7 +102,6 @@ namespace FileCrawling
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var tree = new Tree();
             FolderBrowserDialog openFolder1 = new FolderBrowserDialog();
             openFolder1.ShowDialog();
             root = openFolder1.SelectedPath;
@@ -117,6 +120,21 @@ namespace FileCrawling
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             goal = textBox1.Text;
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
