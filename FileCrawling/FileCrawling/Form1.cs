@@ -88,7 +88,16 @@ namespace FileCrawling
             if (radioButton1.Checked)
             {
                 TreeNode.Reset();
-                var d = new DFS(root, goal);
+                DFS d;
+                if (checkBox1.Checked)
+                {
+                    d = new DFS(root, goal, true);
+                }
+                else
+                {
+
+                    d = new DFS(root, goal, false);
+                }
                 Visualize(d.DFSTree);
             }
             else if (radioButton2.Checked)
@@ -99,9 +108,6 @@ namespace FileCrawling
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            goal = textBox1.Text;
-            var d = new DFS(root, goal);
-            Visualize(d.DFSTree);
         }
 
         private void button2_Click(object sender, EventArgs e)
