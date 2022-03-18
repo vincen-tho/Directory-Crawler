@@ -14,12 +14,14 @@ namespace FileCrawling
         public List<string> solution;
         public Tree DFSTree;
         public bool found;
+        public bool allOcc;
 
-        public DFS(string root, string goal)
+        public DFS(string root, string goal, bool allOcc)
         {
             this.root = root;
             this.goal = goal;
             this.found = false;
+            this.allOcc = allOcc;
             this.solution = new List<string>();
             this.DFSTree = new Tree();
             this.DFSTree.root = DFSRecursive(root);
@@ -75,7 +77,10 @@ namespace FileCrawling
                         {
                             this.solution.Add(file);
                             DFS.root.AddChild(fileName, 2);
-                            this.found = true;
+                            if (!this.allOcc)
+                            {
+                                this.found = true;
+                            }
                         }
                         else
                         {
@@ -129,7 +134,10 @@ namespace FileCrawling
                         {
                             this.solution.Add(file);
                             DFS.root.AddChild(fileName, 2);
-                            this.found = true;
+                            if (!this.allOcc)
+                            {
+                                this.found = true;
+                            }
                         }
                         else
                         {
