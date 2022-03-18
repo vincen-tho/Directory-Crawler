@@ -153,39 +153,5 @@ namespace FileCrawling
 
             return DFS.root;
         }
-
-        public void addSolution()
-        {
-            List<string> directory = new List<string>();
-            string[] folder;
-            foreach (string sol in solution)
-            {
-                directory.Add(PathUtil.splitPath(this.root, sol));
-            }
-            //iterasiin
-            foreach (string dir in directory)
-            {
-                folder = dir.Split(Path.DirectorySeparatorChar);
-                folder = folder.Skip(1).ToArray();
-                goalPath(folder, DFSTree.root);
-            }
-        }
-
-        public void goalPath(string[] folder, TreeNode node)
-        {
-            if (folder.Length != 0)
-            {
-                foreach (TreeNode child in node.children)
-                {
-                    if (child.name == folder[0])
-                    {
-                        child.SetCategory(2);
-                        folder = folder.Skip(1).ToArray();
-                        goalPath(folder, child);
-                        break;
-                    }
-                }
-            }
-        }
     }
 }
