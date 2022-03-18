@@ -126,7 +126,5 @@ namespace FileCrawling
             }
             return BFS.root;
         }
-
-
     }
 }

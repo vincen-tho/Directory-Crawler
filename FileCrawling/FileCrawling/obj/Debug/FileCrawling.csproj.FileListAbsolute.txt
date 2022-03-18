@@ -60,3 +60,21 @@ D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Director
 D:\KULIAH WOY\AKADEMIK\Semester 4\Strategi Algoritma\Tubes 2\New folder\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.pdb
 C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\FileCrawling\obj\Debug\FileCrawling.exe
 C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\FileCrawling\obj\Debug\FileCrawling.pdb
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\filecrawling\obj\Debug\FileCrawling.csproj.AssemblyReference.cache
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\filecrawling\filecrawling\obj\Debug\FileCrawling.csproj.SuggestedBindingRedirects.cache
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\FileCrawling.exe.config
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\FileCrawling.exe.manifest
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\FileCrawling.application
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\FileCrawling.exe
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\FileCrawling.pdb
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\AutomaticGraphLayout.dll
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\AutomaticGraphLayout.Drawing.dll
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\bin\Debug\Microsoft.Msagl.WpfGraphControl.dll
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.Form1.resources
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.Properties.Resources.resources
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.csproj.GenerateResource.cache
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.csproj.CoreCompileInputs.cache
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.exe.manifest
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.application
+C:\My Files\Coding\Vs Code Files\Univ\Sems 4\Stima\Tubes 2 (BFS and DFS)\Directory-Crawler\FileCrawling\FileCrawling\obj\Debug\FileCrawling.csproj.CopyComplete

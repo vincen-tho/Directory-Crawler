@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\FileSearch",
-    "\\src\\FileSearch\\FileSearch"
+    "\\FileCrawling",
+    "\\FileCrawling\\FileCrawling"
   ],
-  "SelectedNode": "\\src\\FileSearch\\FileSearch\\BFS.cs",
   "PreviewInSolutionExplorer": false
 }
