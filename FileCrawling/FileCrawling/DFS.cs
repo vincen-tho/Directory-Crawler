@@ -25,7 +25,7 @@ namespace FileCrawling
             this.solution = new List<string>();
             this.DFSTree = new Tree();
             this.DFSTree.root = DFSRecursive(root);
-            this.addSolution();
+            PathUtil.addSolution(this.solution, this.root, DFSTree.root);
             this.DFSTree.root.SetName(root);
         }
 
