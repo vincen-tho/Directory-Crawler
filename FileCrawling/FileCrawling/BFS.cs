@@ -126,5 +126,74 @@ namespace FileCrawling
             }
             return BFS.root;
         }
+        
+        public TreeNode findBFS(string path)
+        {
+            string[] folders;
+            string[] files;
+            string folderName, fileName, currentFolder;
+            TreeNode currentNode;
+            Tree BFS = new Tree();
+
+            BFS.root = new TreeNode(path, 1);
+            this.queue.Add(path);
+            this.nodes.Add(BFS.root);
+
+            while (this.queue.Count > 0 && !this.found)
+            {
+                currentFolder = this.queue[0];
+                this.queue.RemoveAt(0);
+                currentNode = this.nodes[0];
+                this.nodes.RemoveAt(0);
+                folders = PathUtil.FoldersInPath(currentFolder);
+                files = PathUtil.FilesInPath(currentFolder);
+
+                if (folders == null && files == null)
+                {
+                    currentNode.AddChild("EMPTY DIRECTORY", 1);
+                }
+
+                if (folders != null)
+                {
+                    foreach (string folder in folders)
+                    {
+                        this.queue.Add(folder);
+                        folderName = PathUtil.removePath(folder);
+                        var c = new TreeNode(folderName, 1);
+                        this.nodes.Add(c);
+                        currentNode.children.Add(c);
+                    }
+                }
+
+                if (files != null)
+                {
+                    foreach (string file in files)
+                    {
+                        fileName = PathUtil.removePath(file);
+                        if (!this.found)
+                        {
+                            if (fileName == this.goal)
+                            {
+                                currentNode.AddChild(fileName, 2);
+                                this.solution.Add(file);
+                                if (!this.allOcc)
+                                {
+                                    this.found = true;
+                                }
+                            }
+                            else
+                            {
+                                currentNode.AddChild(fileName, 1);
+                            }
+                        }
+                        else
+                        {
+                            currentNode.AddChild(fileName, 0);
+                        }
+                    }
+                }
+            }
+            return BFS.root;
+        }
     }
 }
