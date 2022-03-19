@@ -52,84 +52,8 @@ namespace FileCrawling
         {
             Console.WriteLine(this.solution[0]);
         }
-
-        public TreeNode BFSSearch(string path)
-        {
-            string[] folders;
-            string[] files;
-            string fileName, folderName, pathName;
-            Tree BFS = new Tree();
-
-            pathName = PathUtil.removePath(path);
-            folders = PathUtil.FoldersInPath(path);
-            files = PathUtil.FilesInPath(path);
-            BFS.root = new TreeNode(pathName, 1);
-
-            if (folders == null && files == null)
-            {
-                DFS.root.AddChild("EMPTY DIRECTORY", 1);
-            }
-
-            // Queue contains all the folders in the same level
-            foreach (string folder in folders)
-            {
-                queue.Enqueue(folder);
-            }
-
-            while (queue.Count > 0 && !this.found)
-            {
-                string currentFolder = queue.Dequeue();
-                string currentFolderName = PathUtil.removePath(currentFolder);
-
-                string[] currentFolders = PathUtil.FoldersInPath(currentFolder);
-                string[] currentFiles = PathUtil.FilesInPath(currentFolder);
-
-                BFS.root.AddChild(currentFolderName, 1);
-
-
-                if (currentFolders != null)
-                {
-                    foreach (string folder in currentFolders)
-                    {
-                        queue.Enqueue(folder);
-                    }
-                }
-
-                if (files != null)
-                {
-                    foreach (string file in files)
-                    {
-
-                        fileName = PathUtil.removePath(file);
-
-                        if (!this.found)
-                        {
-                            if (fileName == this.goal)
-                            {
-                                BFS.root.AddChild(fileName, 2);
-                                this.solution.Add(file);
-                                if (!this.allOcc)
-                                {
-                                    this.found = true;
-                                }
-                            }
-                            else
-                            {
-                                BFS.root.AddChild(fileName, 1);
-                            }
-                        }
-                        // file already found
-                        else
-                        {
-                            BFS.root.AddChild(fileName, 0);
-                        }
-                    }
-                }
-            }
-            return BFS.root;
-        }
         
-        public TreeNode findBFS(string path)
+        public TreeNode BFSSearch(string path)
         {
             string[] folders;
             string[] files;
