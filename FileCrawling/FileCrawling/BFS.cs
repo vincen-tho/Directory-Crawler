@@ -13,6 +13,7 @@ namespace FileCrawling
         public string root;
         public string goal;
         public List<string> solution;
+        public List<TreeNode> nodes;
         public Tree BFSTree;
         public bool found;
         public bool allOcc;
@@ -26,6 +27,7 @@ namespace FileCrawling
             this.allOcc = allOcc;
             this.solution = new List<string>();
             this.BFSTree = new Tree();
+            this.nodes = new List<TreeNode>();
             this.BFSTree.root = BFSSearch(root);
             PathUtil.addSolution(this.solution, this.root, BFSTree.root);
             this.BFSTree.root.SetName(root);
