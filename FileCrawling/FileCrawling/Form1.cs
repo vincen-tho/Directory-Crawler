@@ -103,6 +103,18 @@ namespace FileCrawling
             else if (radioButton2.Checked)
             {
                 // BFS DISINI
+                TreeNode.Reset();
+                BFS b;
+                if (checkBox1.Checked)
+                {
+                    b = new BFS(root, goal, true);
+                }
+                else
+                {
+
+                    b = new BFS(root, goal, false);
+                }
+                Visualize(b.BFSTree);
             }
         }
 
