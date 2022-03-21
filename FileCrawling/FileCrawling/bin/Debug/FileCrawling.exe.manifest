@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FileCrawling.exe" size="19416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FileCrawling.exe" size="19928">
       <assemblyIdentity name="FileCrawling" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2Z2kLQht/Ebn8VPULZX8ueOy+DDFXCi47OZ2YW8O3PQ=</dsig:DigestValue>
+        <dsig:DigestValue>op4ydaZqcvBTSuHrUU9F3t3A2RvUXwzRbWtrcAs4zLE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
