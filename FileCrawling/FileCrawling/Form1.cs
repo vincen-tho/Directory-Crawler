@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
+using System.Threading;
 
 namespace FileCrawling
 {
@@ -18,6 +21,7 @@ namespace FileCrawling
         }
         public string root;
         public string goal;
+        public List<string> globalSol;
         public void Print()
         {
             //create a form 
@@ -50,11 +54,10 @@ namespace FileCrawling
             VisualizeTreeNode(t.root, graph);
 
             gViewer1.Graph = graph;
-            gViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
 
             //associate the viewer with the form 
             //show the form 
-
+            
 
         }
         public void VisualizeTreeNode(TreeNode t, Microsoft.Msagl.Drawing.Graph graph)
@@ -85,6 +88,10 @@ namespace FileCrawling
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Stopwatch SW = new Stopwatch();
+            SW.Start();
+            goal = textBox1.Text;
+            linkLabel2.Links.Clear();
             if (radioButton1.Checked)
             {
                 TreeNode.Reset();
@@ -99,6 +106,16 @@ namespace FileCrawling
                     d = new DFS(root, goal, false);
                 }
                 Visualize(d.DFSTree);
+                if (d.found)
+                {
+                    linkLabel2.Enabled = true;
+                }
+                else
+                {
+                    linkLabel2.Enabled = false;
+                    linkLabel2.Text = "Goal not found";
+                }
+                globalSol = new List<string>(d.solution);
             }
             else if (radioButton2.Checked)
             {
@@ -115,7 +132,40 @@ namespace FileCrawling
                     b = new BFS(root, goal, false);
                 }
                 Visualize(b.BFSTree);
+
+                if (b.found)
+                {
+                    linkLabel2.Enabled = true;
+                }
+                else
+                {
+                    linkLabel2.Enabled = false;
+
+                }
+                globalSol = b.solution;
             }
+            SW.Stop();
+            label2.Text = "Time elapsed: " + SW.ElapsedMilliseconds + " ms";
+            int curStart = 0;
+            string txt;
+            if (globalSol.Count() > 0) {
+                linkLabel2.Text = "";
+                linkLabel2.Enabled = true;
+            
+                for (int i = 0; i < globalSol.Count(); i++)
+                {
+                    txt = ("Goal" + (i+1).ToString() + "\n");
+                    linkLabel2.Text += txt;
+                    linkLabel2.Links.Add(curStart, curStart + (txt.Length - 1), txt);
+                    curStart += txt.Length;
+
+                }
+            }
+            else
+            {
+                linkLabel2.Enabled = false;
+            }
+      
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -127,7 +177,18 @@ namespace FileCrawling
             FolderBrowserDialog openFolder1 = new FolderBrowserDialog();
             openFolder1.ShowDialog();
             root = openFolder1.SelectedPath;
+            string rootShow = root;
+            int maxLength = 80;
+            if (root.Length > maxLength)
+            {
+                rootShow = root.Substring(0, maxLength) + "...";
+            }
+            linkLabel1.Text = rootShow;
+            linkLabel1.Enabled = true;
+
+            
         }
+
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -156,6 +217,36 @@ namespace FileCrawling
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void gViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", root);
+
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            int i = linkLabel2.Links.IndexOf(e.Link);
+            string folderPath = Path.GetDirectoryName(globalSol[i]);
+            System.Diagnostics.Process.Start("explorer.exe", folderPath);
 
         }
     }

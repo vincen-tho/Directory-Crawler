@@ -41,6 +41,10 @@ namespace FileCrawling
         {
             accessedCount = 0;
         }
+        public static int getAccessedCount()
+        {
+            return accessedCount;
+        }
     }
 
     public class Tree
