@@ -65,8 +65,24 @@ namespace FileCrawling
             {
                 DFS.root.AddChild("EMPTY DIRECTORY", 1);
             }
-
-            else if (folders == null) //tidak ada folder
+            
+            if (folders != null)//tidak ada files
+            {
+                foreach (string folder in folders)
+                {
+                    if (!this.found)
+                    {
+                        DFS.root.children.Add(DFSRecursive(folder));
+                    }
+                    else
+                    {
+                        folderName = PathUtil.removePath(folder);
+                        DFS.root.AddChild(folderName, 0);
+                    }
+                }
+            }
+            
+            if (files != null) //tidak ada folder
             {
                 foreach (string file in files)
                 {
@@ -93,64 +109,6 @@ namespace FileCrawling
                     }
                 }
             }
-
-            else if (files == null)//tidak ada files
-            {
-                foreach (string folder in folders)
-                {
-                    if (!this.found)
-                    {
-                        DFS.root.children.Add(DFSRecursive(folder));
-                    }
-                    else
-                    {
-                        folderName = PathUtil.removePath(folder);
-                        DFS.root.AddChild(folderName, 0);
-                    }
-                }
-            }
-
-            else //ada file dan folder
-            {
-                foreach (string folder in folders)
-                {
-                    if (!this.found)
-                    {
-                        DFS.root.children.Add(DFSRecursive(folder));
-                    }
-                    else
-                    {
-                        folderName = PathUtil.removePath(folder);
-                        DFS.root.AddChild(folderName, 0);
-                    }
-                }
-
-                foreach (string file in files)
-                {
-                    fileName = PathUtil.removePath(file);
-                    if (!this.found)
-                    {
-                        if (fileName == this.goal)
-                        {
-                            this.solution.Add(file);
-                            DFS.root.AddChild(fileName, 2);
-                            if (!this.allOcc)
-                            {
-                                this.found = true;
-                            }
-                        }
-                        else
-                        {
-                            DFS.root.AddChild(fileName, 1);
-                        }
-                    }
-                    else
-                    {
-                        DFS.root.AddChild(fileName, 0);
-                    }
-                }
-            }
-
             return DFS.root;
         }
     }
