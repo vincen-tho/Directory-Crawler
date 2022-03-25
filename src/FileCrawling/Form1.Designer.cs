@@ -286,7 +286,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Location = new System.Drawing.Point(995, 467);
             this.panel1.Name = "panel1";
