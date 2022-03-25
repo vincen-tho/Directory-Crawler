@@ -18,6 +18,7 @@ namespace FileCrawling
         public Form1()
         {
             InitializeComponent();
+            this.Text = "File Crawling";
         }
         public string root;
         public string goal;
