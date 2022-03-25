@@ -22,35 +22,10 @@ namespace FileCrawling
         public string root;
         public string goal;
         public List<string> globalSol;
-        public void Print()
-        {
-            //create a form 
-            System.Windows.Forms.Form form = new Form1();
-            //create a graph object 
-            Microsoft.Msagl.Drawing.Graph graph = new Microsoft.Msagl.Drawing.Graph("graph");
-            //create the graph content 
-            graph.AddEdge("A", "B").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.AddEdge("A", "C").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.AddEdge("B", "D").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.AddEdge("B", "E").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.AddEdge("C", "F").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.AddEdge("C", "G").Attr.Color = Microsoft.Msagl.Drawing.Color.Green;
-            graph.FindNode("A").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("B").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("C").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("D").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("E").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("F").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            graph.FindNode("G").Attr.FillColor = Microsoft.Msagl.Drawing.Color.White;
-            gViewer1.Graph = graph;
-            //bind the graph to the viewer 
-            //associate the viewer with the form 
-        }
         public void Visualize(Tree t)
         {
             //create a graph object 
             Microsoft.Msagl.Drawing.Graph graph = new Microsoft.Msagl.Drawing.Graph("graph");
-
             VisualizeTreeNode(t.root, graph);
 
             gViewer1.Graph = graph;
@@ -148,16 +123,19 @@ namespace FileCrawling
             label2.Text = "Time elapsed: " + SW.ElapsedMilliseconds + " ms";
             int curStart = 0;
             string txt;
+            string folderPath;
             if (globalSol.Count() > 0) {
                 linkLabel2.Text = "";
                 linkLabel2.Enabled = true;
             
                 for (int i = 0; i < globalSol.Count(); i++)
                 {
-                    txt = ("Goal" + (i+1).ToString() + "\n");
+                    folderPath = Path.GetDirectoryName(globalSol[i]);
+                    txt = (folderPath + "\n\n");
                     linkLabel2.Text += txt;
-                    linkLabel2.Links.Add(curStart, curStart + (txt.Length - 1), txt);
+                    linkLabel2.Links.Add(curStart, (txt.Length - 1), txt);
                     curStart += txt.Length;
+                    
 
                 }
             }
@@ -177,13 +155,7 @@ namespace FileCrawling
             FolderBrowserDialog openFolder1 = new FolderBrowserDialog();
             openFolder1.ShowDialog();
             root = openFolder1.SelectedPath;
-            string rootShow = root;
-            int maxLength = 80;
-            if (root.Length > maxLength)
-            {
-                rootShow = root.Substring(0, maxLength) + "...";
-            }
-            linkLabel1.Text = rootShow;
+            linkLabel1.Text = root;
             linkLabel1.Enabled = true;
 
             
@@ -247,6 +219,21 @@ namespace FileCrawling
             int i = linkLabel2.Links.IndexOf(e.Link);
             string folderPath = Path.GetDirectoryName(globalSol[i]);
             System.Diagnostics.Process.Start("explorer.exe", folderPath);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
 
         }
     }

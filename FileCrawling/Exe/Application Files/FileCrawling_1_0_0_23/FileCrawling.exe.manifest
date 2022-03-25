@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="FileCrawling.exe" version="1.0.0.23" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="FileCrawling.exe" version="1.0.0.23" publicKeyToken="5ec76595a0635ec3" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="FileCrawling" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FileCrawling.exe" size="23512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FileCrawling.exe" size="24024">
       <assemblyIdentity name="FileCrawling" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5eE1ZF7Mb5bncMWKg7QBHhwbtK2IU3r0LniDha/32Ig=</dsig:DigestValue>
+        <dsig:DigestValue>rlMg0sUvKzGM0XAVTeEdanYFSo4VXXmULgm2CE7ZuKU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,4 +110,4 @@
       <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
     </hash>
   </file>
-</asmv1:assembly>
+<publisherIdentity name="CN=LAPTOP-E8LSUGL3\Asus" issuerKeyHash="c9eab2554c300cb1dd85fb9b2869f274e23d62fa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aeH8YuWLRmwHNW+fyIZq1G+pgIYZl2fvHlAZfdLKayQ=</DigestValue></Reference></SignedInfo><SignatureValue>LwCWD6d5n53Sj/S62XNLWCJuaGGnHyT2dMG2HR8mpx6x454/xA0dSMZwQ+ybtK5IDj/X4LkoI503mdrYhCH8/BlzOZFrQn9RCZocGiBzhyWkztsxPnWUYiPerQ6Xw11atgSSY5KD8Rs1i/N14LRWkXDvjPO082UN1iJFalAOYNM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s2agP+8nGJvZRK6NAoWL5KUg1f9nFguV/+R+zG9VvOaGC+W2LUUaHIZZBVzQiAWjYpmb4uGl8JNakrmiIckkso/rEPdR9HXfvW792Nh9e5LRp0Sywi7E6bFWvmmyYKS8uytJJ65sxkJasF+9OLOUmN7aD9aWyWUMqJ8EBZo90Zk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="246bcad27d19501eef6797198680a96fd46a86c89f6f35076c468be562fce169" Description="" Url=""><as:assemblyIdentity name="FileCrawling.exe" version="1.0.0.23" publicKeyToken="5ec76595a0635ec3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-E8LSUGL3\Asus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sa3Fx13Zp3RwmHAOE1czCOsP+NCrdAS2mjCyDInxzfQ=</DigestValue></Reference></SignedInfo><SignatureValue>HaHW/CM/M/5EnN70YOh40LaBM4vCQIsorpyalb1XVWS9zL5ufRS9z8Zbym5Iqefuux9qtLqWRaXZxfpNnGXDaNcwrRFpSiRYLEXX2NNok2kPSeP9WB0ZKDDaUahouGIQdgYfaHQ8uuZXsXHy7XiTRlqD/1BX9jlQYsa6PTForAw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s2agP+8nGJvZRK6NAoWL5KUg1f9nFguV/+R+zG9VvOaGC+W2LUUaHIZZBVzQiAWjYpmb4uGl8JNakrmiIckkso/rEPdR9HXfvW792Nh9e5LRp0Sywi7E6bFWvmmyYKS8uytJJ65sxkJasF+9OLOUmN7aD9aWyWUMqJ8EBZo90Zk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQUV9KVluz0blDiKIJKb+sWjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATABBAFAAVABPAFAALQBFADgATABTAFUARwBMADMAXABBAHMAdQBzMB4XDTIyMDMxNjEzMzE1NVoXDTIzMDMxNjE5MzE1NVowMzExMC8GA1UEAx4oAEwAQQBQAFQATwBQAC0ARQA4AEwAUwBVAEcATAAzAFwAQQBzAHUAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs2agP+8nGJvZRK6NAoWL5KUg1f9nFguV/+R+zG9VvOaGC+W2LUUaHIZZBVzQiAWjYpmb4uGl8JNakrmiIckkso/rEPdR9HXfvW792Nh9e5LRp0Sywi7E6bFWvmmyYKS8uytJJ65sxkJasF+9OLOUmN7aD9aWyWUMqJ8EBZo90ZkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCkpTFo8PFmyL/V+W1LNtDKvkO8uNCyaXkksb1lqZ6aVzy1PQ5HunneRFPMpJ8LPGgR/VQWCJv7CqvnwLGn2xDBhR7eEBG9+JBdt24jSZeoy/vDLspRGU10qiRYLO65L7FLDC4B6Au2YsrvyV1WFAaYWDTJc5qCi62InOTyKbwSEg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
